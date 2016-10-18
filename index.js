@@ -21419,6 +21419,7 @@
 	const React = __webpack_require__(1);
 	const Header = __webpack_require__(173);
 	const Main = __webpack_require__(176);
+	const Footer = __webpack_require__(182);
 
 	class App extends React.Component {
 
@@ -21427,7 +21428,8 @@
 	      'div',
 	      null,
 	      React.createElement(Header, null),
-	      React.createElement(Main, null)
+	      React.createElement(Main, null),
+	      React.createElement(Footer, null)
 	    );
 	  }
 
@@ -21697,13 +21699,6 @@
 	        'section',
 	        { id: 'blog', className: 'Main__Section' },
 	        React.createElement(BlogSection, null)
-	      ),
-	      React.createElement(
-	        'footer',
-	        { className: 'Footer' },
-	        'from ',
-	        React.createElement('img', { src: '/img/shrine.png' }),
-	        ' with \u2764'
 	      )
 	    );
 	  }
@@ -21836,7 +21831,7 @@
 	        React.createElement(
 	          "h2",
 	          { className: "SlackSection__Title" },
-	          React.createElement("img", { src: "/img/logo_slack960.png", alt: "Kyoto.js Slack" })
+	          React.createElement("img", { className: "BlogSection__TitleImage", src: "/img/logo_slack960.png", alt: "Kyoto.js Slack" })
 	        ),
 	        React.createElement(
 	          "h3",
@@ -21930,7 +21925,7 @@
 	        React.createElement(
 	          "h2",
 	          { className: "MeetupSection__Title" },
-	          React.createElement("img", { src: "/img/logo_meetup960.png", alt: "Kyoto.js Meetup" })
+	          React.createElement("img", { className: "BlogSection__TitleImage", src: "/img/logo_meetup960.png", alt: "Kyoto.js Meetup" })
 	        ),
 	        React.createElement(
 	          "h3",
@@ -22053,7 +22048,7 @@
 	        React.createElement(
 	          "h2",
 	          { className: "BlogSection__Title" },
-	          React.createElement("img", { src: "/img/logo_blog960.png", alt: "Kyoto.js Blog" })
+	          React.createElement("img", { className: "BlogSection__TitleImage", src: "/img/logo_blog960.png", alt: "Kyoto.js Blog" })
 	        ),
 	        React.createElement(
 	          "h3",
@@ -22104,6 +22099,22 @@
 	}
 
 	module.exports = BlogSection;
+
+/***/ },
+/* 182 */
+/***/ function(module, exports, __webpack_require__) {
+
+	const React = __webpack_require__(1);
+
+	const Footer = () => React.createElement(
+	  "footer",
+	  { className: "Footer" },
+	  "from ",
+	  React.createElement("img", { src: "/img/shrine.png" }),
+	  " with \u2764"
+	);
+
+	module.exports = Footer;
 
 /***/ }
 /******/ ]);
