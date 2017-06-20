@@ -12,7 +12,7 @@
  |
  */
 module.exports = {
-    files  : 'app',
-    server : 'app',
+    files  : '.',
+    server : '.',
     open   : false,
 };

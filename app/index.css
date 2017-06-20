@@ -1,0 +1,406 @@
+body {
+  font-family: "Hiragino Kaku Gothic Pro", "Meiryo", sans-serif;
+  color: #2E2E2C;
+  background: #FFFFFF;
+  margin: 0;
+  padding: 0; }
+
+a, a:hover, a:visited {
+  color: #2D333A; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Hiragino Kaku Gothic Std", "Meiryo", sans-serif;
+  color: #2E2E2C;
+  margin: 0; }
+  h1 a, h1 a:hover, h1 a:visited, h2 a, h2 a:hover, h2 a:visited, h3 a, h3 a:hover, h3 a:visited, h4 a, h4 a:hover, h4 a:visited, h5 a, h5 a:hover, h5 a:visited, h6 a, h6 a:hover, h6 a:visited {
+    text-decoration: none;
+    color: #2E2E2C; }
+
+h1 {
+  font-size: 144px;
+  line-height: 144px;
+  margin: 0; }
+
+h2 {
+  font-size: 72px;
+  line-height: 72px;
+  margin: 0; }
+
+h3 {
+  font-size: 36px;
+  line-height: 36px;
+  margin: 0; }
+
+h4 {
+  font-size: 24px;
+  line-height: 24px;
+  margin: 0; }
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 72px;
+    line-height: 72px;
+    margin: 0; }
+  h2 {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0; }
+  h3 {
+    font-size: 24px;
+    line-height: 24px;
+    margin: 0; }
+  h4 {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0; } }
+
+.Header {
+  background: #2D333A;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 44px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .Header__Logo {
+    width: 140px; }
+    .Header__Logo a {
+      display: block;
+      height: 100%; }
+    .Header__Logo img {
+      margin: 7px; }
+  .Header__Navigation__Links {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0;
+    height: 100%; }
+  .Header__Navigation__Link {
+    display: block; }
+    .Header__Navigation__Link a {
+      display: block;
+      height: 100%;
+      color: #FFFFFF;
+      text-decoration: none; }
+    .Header__Navigation__Link span {
+      margin-right: 10px;
+      line-height: 44px;
+      vertical-align: top;
+      font-weight: bold; }
+      @media (max-width: 480px) {
+        .Header__Navigation__Link span {
+          display: none; } }
+    .Header__Navigation__Link img {
+      filter: invert(1);
+      width: 32px;
+      height: 32px;
+      padding: 6px; }
+
+.Main {
+  position: relative;
+  top: 44px;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 44px; }
+  .Main__Section {
+    width: 100%;
+    margin-bottom: 120px;
+    margin-top: -44px;
+    padding-top: 44px; }
+    @media (max-width: 768px) {
+      .Main__Section {
+        margin-bottom: 30px; } }
+  .Main__TopSection {
+    width: 100%;
+    margin-bottom: 120px;
+    margin-top: -44px;
+    padding-top: 44px; }
+    @media (max-width: 768px) {
+      .Main__TopSection {
+        margin-bottom: 30px; } }
+    @media (max-width: 768px) {
+      .Main__TopSection {
+        margin-bottom: 60px; } }
+
+.TopSection {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto; }
+  .TopSection__Header {
+    text-align: center; }
+  .TopSection__Title {
+    text-align: center;
+    max-height: 320px;
+    filter: drop-shadow(4px 0 0 #3EF6C0);
+    -webkit-filter: drop-shadow(4px 0.5px 0 #3EF6C0) drop-shadow(-4px -0.2px 0 #58EFF7); }
+    @media (max-width: 768px) {
+      .TopSection__Title {
+        filter: drop-shadow(2px 0 0 #3EF6C0); } }
+    @media (max-width: 480px) {
+      .TopSection__Title {
+        filter: drop-shadow(1px 0 0 #3EF6C0); } }
+    @media (max-width: 768px) {
+      .TopSection__Title {
+        -webkit-filter: drop-shadow(2px 0.5px 0 #3EF6C0) drop-shadow(-3px -0.2px 0 #58EFF7); } }
+    @media (max-width: 480px) {
+      .TopSection__Title {
+        -webkit-filter: drop-shadow(1px 0.5px 0 #3EF6C0) drop-shadow(-2px -0.2px 0 #58EFF7); } }
+  .TopSection__SubTitle {
+    height: 90px;
+    line-height: 90px;
+    text-align: center;
+    vertical-align: top;
+    margin-bottom: 60px; }
+    @media (max-width: 768px) {
+      .TopSection__SubTitle {
+        height: auto;
+        font-size: 20px;
+        line-height: 36px; } }
+    @media (max-width: 768px) {
+      .TopSection__SubTitle {
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 30px;
+        margin-top: -10px; } }
+  .TopSection__Cells {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around; }
+  .TopSection__Cell {
+    flex: 1;
+    min-width: 240px;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    width: 33%;
+    text-align: center; }
+    @media (max-width: 768px) {
+      .TopSection__Cell {
+        width: 140px;
+        padding: 0; } }
+    .TopSection__Cell .Link--Slack, .TopSection__Cell .Link--Meetup, .TopSection__Cell .Link--Blog {
+      display: block;
+      width: 100%;
+      font-size: 36px;
+      line-height: 36px;
+      margin: 0;
+      font-family: "Hiragino Kaku Gothic Std", "Meiryo", sans-serif;
+      font-weight: 900;
+      text-decoration: none; }
+      @media (max-width: 768px) {
+        .TopSection__Cell .Link--Slack, .TopSection__Cell .Link--Meetup, .TopSection__Cell .Link--Blog {
+          font-size: 24px; } }
+      @media (max-width: 480px) {
+        .TopSection__Cell .Link--Slack, .TopSection__Cell .Link--Meetup, .TopSection__Cell .Link--Blog {
+          font-size: 18px; } }
+    .TopSection__Cell .Link--Slack:hover {
+      filter: drop-shadow(0 2px 0 #6DCEFF); }
+    .TopSection__Cell .Link--Meetup:hover {
+      filter: drop-shadow(0 2px 0 #FFB762); }
+    .TopSection__Cell .Link--Blog:hover {
+      filter: drop-shadow(0 2px 0 #FFE733); }
+    .TopSection__Cell img {
+      display: block;
+      width: 70%;
+      max-width: 128px;
+      margin: 20px auto; }
+      @media (max-width: 768px) {
+        .TopSection__Cell img {
+          margin: 5px auto; } }
+
+.SlackSection {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto; }
+  .SlackSection .Highlight {
+    text-shadow: 2px 0 0 #6DCEFF;
+    text-decoration: underline; }
+    @media (max-width: 768px) {
+      .SlackSection .Highlight {
+        text-shadow: 1px 0 0 #6DCEFF; } }
+    .SlackSection .Highlight:hover {
+      color: #6DCEFF;
+      text-shadow: 2px 2px 0 #2E2E2C; }
+  .SlackSection__Header {
+    text-align: center; }
+  .SlackSection__Title {
+    text-align: center;
+    max-height: 180px;
+    filter: drop-shadow(4px 0 0 #6DCEFF); }
+    @media (max-width: 768px) {
+      .SlackSection__Title {
+        filter: drop-shadow(2px 0 0 #6DCEFF); } }
+    @media (max-width: 480px) {
+      .SlackSection__Title {
+        filter: drop-shadow(1px 0 0 #6DCEFF); } }
+  .SlackSection__TitleImage {
+    width: 100%; }
+    @media (max-width: 960px) {
+      .SlackSection__TitleImage {
+        width: 95%;
+        margin: 0 auto; } }
+  .SlackSection__SubTitle {
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    vertical-align: top; }
+    @media (max-width: 768px) {
+      .SlackSection__SubTitle {
+        height: auto;
+        font-size: 20px;
+        line-height: 36px; } }
+  .SlackSection__Cells {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around; }
+  .SlackSection__Cell {
+    flex: 1;
+    min-width: 240px;
+    padding: 20px 40px;
+    box-sizing: border-box; }
+    @media (max-width: 768px) {
+      .SlackSection__Cell {
+        padding: 20px; } }
+    .SlackSection__Cell .andMore {
+      text-align: right; }
+
+.MeetupSection {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto; }
+  .MeetupSection .Highlight {
+    text-shadow: 2px 0 0 #FFB762;
+    text-decoration: underline; }
+    @media (max-width: 768px) {
+      .MeetupSection .Highlight {
+        text-shadow: 1px 0 0 #FFB762; } }
+    .MeetupSection .Highlight:hover {
+      color: #FFB762;
+      text-shadow: 2px 2px 0 #2E2E2C; }
+  .MeetupSection__Header {
+    text-align: center; }
+  .MeetupSection__Title {
+    text-align: center;
+    max-height: 180px;
+    filter: drop-shadow(4px 0 0 #FFB762); }
+    @media (max-width: 768px) {
+      .MeetupSection__Title {
+        filter: drop-shadow(2px 0 0 #FFB762); } }
+    @media (max-width: 480px) {
+      .MeetupSection__Title {
+        filter: drop-shadow(1px 0 0 #FFB762); } }
+  .MeetupSection__TitleImage {
+    width: 100%; }
+    @media (max-width: 960px) {
+      .MeetupSection__TitleImage {
+        width: 95%;
+        margin: 0 auto; } }
+  .MeetupSection__SubTitle {
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    vertical-align: top; }
+    @media (max-width: 768px) {
+      .MeetupSection__SubTitle {
+        height: auto;
+        font-size: 20px;
+        line-height: 36px; } }
+  .MeetupSection__Description {
+    text-align: center;
+    vertical-align: top;
+    margin: 20px auto 60px; }
+  .MeetupSection__Cells {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around; }
+  .MeetupSection__Cell {
+    flex: 1;
+    min-width: 240px;
+    padding: 20px 40px;
+    box-sizing: border-box; }
+    @media (max-width: 768px) {
+      .MeetupSection__Cell {
+        padding: 20px; } }
+
+.BlogSection {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto; }
+  .BlogSection .Highlight {
+    text-shadow: 2px 0 0 #FFE733;
+    text-decoration: underline; }
+    @media (max-width: 768px) {
+      .BlogSection .Highlight {
+        text-shadow: 1px 0 0 #FFE733; } }
+    .BlogSection .Highlight:hover {
+      color: #FFE733;
+      text-shadow: 2px 2px 0 #2E2E2C; }
+  .BlogSection__Header {
+    text-align: center; }
+  .BlogSection__Title {
+    text-align: center;
+    max-height: 180px;
+    filter: drop-shadow(4px 0 0 #FFE733); }
+    @media (max-width: 768px) {
+      .BlogSection__Title {
+        filter: drop-shadow(2px 0 0 #FFE733); } }
+    @media (max-width: 480px) {
+      .BlogSection__Title {
+        filter: drop-shadow(1px 0 0 #FFE733); } }
+  .BlogSection__TitleImage {
+    width: 100%; }
+    @media (max-width: 960px) {
+      .BlogSection__TitleImage {
+        width: 95%;
+        margin: 0 auto; } }
+  .BlogSection__SubTitle {
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    vertical-align: top; }
+    @media (max-width: 768px) {
+      .BlogSection__SubTitle {
+        height: auto;
+        font-size: 20px;
+        line-height: 36px; } }
+  .BlogSection__Cells {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    justify-content: space-between;
+    padding: 20px 40px; }
+    @media (max-width: 768px) {
+      .BlogSection__Cells {
+        padding: 20px; } }
+  .BlogSection__Cell {
+    flex: 1;
+    min-width: 240px;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    padding: 0; }
+    .BlogSection__Cell img {
+      display: block;
+      width: 110%;
+      max-width: 480px;
+      text-align: center; }
+      @media (max-width: 768px) {
+        .BlogSection__Cell img {
+          width: 95%;
+          margin: 0 auto; } }
+
+.Footer {
+  width: 100%;
+  height: 90px;
+  background: #2D333A;
+  color: #FFFFFF;
+  text-align: center;
+  padding-top: 60px; }
+  @media (max-width: 768px) {
+    .Footer {
+      height: 60px;
+      padding-top: 20px; } }
+  .Footer img {
+    transform: translateY(6px); }

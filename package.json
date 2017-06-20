@@ -28,15 +28,15 @@
   "main": "index.js",
   "scripts": {
     "build": "npm-run-all -p build:js build:css build:html",
-    "build:css": "node-sass --include-path=./src/scss src/scss/index.scss -o docs",
-    "build:html": "mkdir -p docs && cp src/index.html docs/index.html",
+    "build:css": "node-sass --include-path=./src/scss src/scss/index.scss -o .",
+    "build:html": "cpx 'src/**/*.{html,png,jpg}' .",
     "build:js": "webpack",
     "serve": "browser-sync start -c bs-config.js",
     "start": "npm-run-all -s build -p watch serve",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "npm-run-all -p watch:js watch:css watch:html",
-    "watch:css": "node-sass -w -r src/scss --include-path=./src/scss src/scss/index.scss -o docs",
-    "watch:html": "cpx 'src/**/*.{html,png,jpg}' docs -w",
+    "watch:css": "node-sass -w -r src/scss --include-path=./src/scss src/scss/index.scss -o .",
+    "watch:html": "cpx 'src/**/*.{html,png,jpg}' . -w",
     "watch:js": "webpack --watch"
   }
 }
