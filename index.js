@@ -22758,8 +22758,8 @@ class MeetupSection extends React.Component {
             "Next: ",
             React.createElement(
               "a",
-              { className: "Highlight", href: "http://kyotojs.connpass.com/event/39462/" },
-              "Kyoto.js 11"
+              { className: "Highlight", href: "http://kyotojs.connpass.com/event/60422/" },
+              "Kyoto.js 13"
             )
           ),
           React.createElement(
@@ -22768,7 +22768,7 @@ class MeetupSection extends React.Component {
             React.createElement(
               "li",
               null,
-              "Time: 2016-10-22 (Sat) 13:00"
+              "Time: 2017-07-29 (Sat) 13:00"
             ),
             React.createElement(
               "li",
@@ -22779,7 +22779,7 @@ class MeetupSection extends React.Component {
           "See ",
           React.createElement(
             "a",
-            { href: "http://kyotojs.connpass.com/event/39462/" },
+            { href: "https://kyotojs.connpass.com/event/60422/" },
             "event page"
           ),
           " for details!"
@@ -22795,6 +22795,24 @@ class MeetupSection extends React.Component {
           React.createElement(
             "ul",
             null,
+            React.createElement(
+              "li",
+              null,
+              React.createElement(
+                "a",
+                { href: "https://kyotojs.connpass.com/event/46417" },
+                "Kyoto.js #12"
+              )
+            ),
+            React.createElement(
+              "li",
+              null,
+              React.createElement(
+                "a",
+                { href: "https://kyotojs.connpass.com/event/39462/" },
+                "Kyoto.js #11"
+              )
+            ),
             React.createElement(
               "li",
               null,
