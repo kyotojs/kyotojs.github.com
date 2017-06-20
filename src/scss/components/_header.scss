@@ -1,0 +1,64 @@
+@import "../_variable";
+
+.Header {
+    background : $sumi;
+    position   : fixed;
+    top        : 0;
+    left       : 0;
+    width      : 100%;
+    height     : 44px;
+    z-index    : 9999;
+
+    display         : flex;
+    flex-direction  : row;
+    justify-content : space-between;
+
+    &__Logo {
+        width : 140px;
+
+        a {
+            display : block;
+            height  : 100%;
+        }
+        img {
+            margin: 7px;
+        }
+    }
+
+    &__Navigation {
+        &__Links {
+            display         : flex;
+            flex-flow       : row nowrap;
+            justify-content : flex-end;
+            padding         : 0;
+            margin          : 0;
+            height          : 100%;
+        }
+        &__Link {
+            display : block;
+
+            a {
+                display         : block;
+                height          : 100%;
+                color           : $white;
+                text-decoration : none;
+            }
+            span {
+                margin-right   : 10px;
+                line-height    : 44px;
+                vertical-align : top;
+                font-weight    : bold;
+
+                @media (max-width: $width-smartphone) {
+                    display : none;
+                }
+            }
+            img {
+                filter  : invert(1);
+                width   : 32px;
+                height  : 32px;
+                padding : 6px;
+            }
+        }
+    }
+}

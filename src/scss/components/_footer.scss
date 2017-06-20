@@ -1,0 +1,19 @@
+@import "../_variable";
+
+.Footer {
+    width       : 100%;
+    height      : 90px;
+    background  : $sumi;
+    color       : $white;
+    text-align  : center;
+    padding-top : 60px;
+
+    @media (max-width: $width-tablet) {
+        height: 60px;
+        padding-top: 20px;
+    }
+
+    img {
+        transform: translateY(6px);
+    }
+}

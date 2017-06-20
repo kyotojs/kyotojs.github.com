@@ -1,0 +1,35 @@
+@import "_variable";
+
+body {
+    font-family : $regular;
+    color       : $black;
+    background  : $white;
+    margin      : 0;
+    padding     : 0;
+}
+
+a, a:hover, a:visited {
+    color : $sumi;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family : $bold;
+    color       : $black;
+    margin      : 0;
+    a, a:hover, a:visited {
+        text-decoration: none;
+        color: $black;
+    }
+}
+
+h1 { font-size: $h1; line-height: $h1; margin: 0; }
+h2 { font-size: $h2; line-height: $h2; margin: 0; }
+h3 { font-size: $h3; line-height: $h3; margin: 0; }
+h4 { font-size: $h4; line-height: $h4; margin: 0; }
+
+@media (max-width: $width-tablet) {
+    h1 { font-size: $h2; line-height: $h2; margin: 0; }
+    h2 { font-size: $h3; line-height: $h3; margin: 0; }
+    h3 { font-size: $h4; line-height: $h4; margin: 0; }
+    h4 { font-size: $h5; line-height: $h5; margin: 0; }
+}

@@ -1,0 +1,30 @@
+@import "../_variable";
+
+.Main {
+    position : relative;
+    top      : $header-size;
+    width    : 100%;
+    margin   : 0 auto;
+
+    padding-bottom : $header-size;
+
+    @mixin Section {
+        width         : 100%;
+        margin-bottom : 120px;
+        margin-top    : -$header-size;
+        padding-top   : $header-size;
+        @media (max-width: $width-tablet) {
+            margin-bottom : 30px;
+        }
+    }
+
+    &__Section {
+        @include Section;
+    }
+    &__TopSection {
+        @include Section;
+        @media (max-width: $width-tablet) {
+            margin-bottom : 60px;
+        }
+    }
+}

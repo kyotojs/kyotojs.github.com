@@ -1,0 +1,42 @@
+{
+  "name": "javascript.kyoto",
+  "version": "0.0.0",
+  "author": "fand <fand@gmork.in>",
+  "description": "javascript.kyoto implementation",
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "normalize.css": "^4.2.0",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "smoothscroll": "^0.2.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2016": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-2": "^6.17.0",
+    "browser-sync": "^2.14.0",
+    "cpx": "^1.5.0",
+    "node-sass": "^3.8.0",
+    "npm-run-all": "^3.0.0",
+    "sass-loader": "^4.0.2",
+    "webpack": "^1.13.2"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm-run-all -p build:js build:css build:html",
+    "build:css": "node-sass --include-path=./src/scss src/scss/index.scss -o docs",
+    "build:html": "mkdir -p docs && cp src/index.html docs/index.html",
+    "build:js": "webpack",
+    "serve": "browser-sync start -c bs-config.js",
+    "start": "npm-run-all -s build -p watch serve",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "npm-run-all -p watch:js watch:css watch:html",
+    "watch:css": "node-sass -w -r src/scss --include-path=./src/scss src/scss/index.scss -o docs",
+    "watch:html": "cpx 'src/**/*.{html,png,jpg}' docs -w",
+    "watch:js": "webpack --watch"
+  }
+}

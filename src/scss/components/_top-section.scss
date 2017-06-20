@@ -1,0 +1,87 @@
+@import "../_variable";
+@import "../objects/_section";
+
+.TopSection {
+    @include Section;
+
+    &__Header {
+        @include Section__Header;
+    }
+
+    &__Title {
+        @include Section__Title(320px, $green);
+
+        -webkit-filter: drop-shadow(4px 0.5px 0 $green) drop-shadow(-4px -0.2px 0 $cyan);
+        @media (max-width: $width-tablet) {
+            -webkit-filter: drop-shadow(2px 0.5px 0 $green) drop-shadow(-3px -0.2px 0 $cyan);
+        }
+        @media (max-width: $width-smartphone) {
+            -webkit-filter: drop-shadow(1px 0.5px 0 $green) drop-shadow(-2px -0.2px 0 $cyan);
+        }
+    }
+
+    &__SubTitle {
+        @include Section__Subtitle(90px);
+        margin-bottom  : 60px;
+
+        @media (max-width: $width-tablet) {
+            font-size     : $h4;
+            line-height   : $h3;
+            margin-bottom : 30px;
+            margin-top    : -10px;
+        }
+    }
+
+    &__Cells {
+        @include Section__Cells;
+    }
+
+    &__Cell {
+        @include Section__Cell;
+        width      : 33%;
+        text-align : center;
+
+        @media (max-width: $width-tablet) {
+            width   : 140px;
+            padding : 0;
+        }
+
+        %Link {
+            display   : block;
+            width     : 100%;
+            font-size: $h3; line-height: $h3; margin: 0;
+            font-family: $bold;
+            font-weight: 900;
+            text-decoration: none;
+
+            @media (max-width: $width-tablet) {
+                font-size: $h4;
+            }
+            @media (max-width: $width-smartphone) {
+                font-size: $h6;
+            }
+        }
+        .Link--Slack {
+            @extend %Link;
+            &:hover { filter: drop-shadow(0 2px 0 $blue); }
+        }
+        .Link--Meetup {
+            @extend %Link;
+            &:hover { filter: drop-shadow(0 2px 0 $orange); }
+        }
+        .Link--Blog {
+            @extend %Link;
+            &:hover { filter: drop-shadow(0 2px 0 $yellow); }
+        }
+
+        img {
+            display   : block;
+            width     : 70%;
+            max-width : 128px;
+            margin    : 20px auto;
+            @media (max-width: $width-tablet) {
+                margin: 5px auto;
+            }
+        }
+    }
+}

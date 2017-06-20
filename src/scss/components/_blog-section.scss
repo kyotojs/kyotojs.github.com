@@ -1,0 +1,52 @@
+@import "../_variable";
+@import "../objects/_section";
+@import "../objects/_highlight";
+
+.BlogSection {
+    @include Section;
+
+    .Highlight {
+        @include highlight($yellow);
+    }
+
+    &__Header {
+        @include Section__Header;
+    }
+
+    &__Title {
+        @include Section__Title(180px, $yellow);
+    }
+
+    &__TitleImage {
+        @include Section__TitleImage;
+    }
+
+    &__SubTitle {
+        @include Section__Subtitle(60px);
+    }
+
+    &__Cells {
+        @include Section__Cells;
+        justify-content : space-between;
+        padding         : 20px 40px;
+        @media (max-width: $width-tablet) {
+            padding : 20px;
+        }
+    }
+
+    &__Cell {
+        @include Section__Cell;
+        padding: 0;
+        img {
+            display    : block;
+            width      : 110%;
+            max-width  : 480px;
+            text-align : center;
+            @media (max-width: $width-tablet) {
+                width  : 95%;
+                margin : 0 auto;
+            }
+        }
+    }
+
+}

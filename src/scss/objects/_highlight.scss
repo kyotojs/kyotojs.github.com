@@ -1,0 +1,11 @@
+@mixin highlight ($color) {
+    text-shadow     : 2px 0 0 $color;
+    text-decoration : underline;
+    @media (max-width: $width-tablet) {
+        text-shadow : 1px 0 0 $color;
+    }
+    &:hover {
+        color       : $color;
+        text-shadow : 2px 2px 0 $black;
+    }
+}

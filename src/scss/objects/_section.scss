@@ -1,0 +1,56 @@
+@import "../_variable";
+
+@mixin Section {
+    width     : 100%;
+    max-width : 960px;
+    margin    : 0 auto;
+}
+
+@mixin Section__Header {
+    text-align: center;
+}
+@mixin Section__Title ($height, $color) {
+    text-align: center;
+    max-height : $height;
+
+    filter: drop-shadow(4px 0 0 $color);
+    @media (max-width: $width-tablet) {
+        filter: drop-shadow(2px 0 0 $color);
+    }
+    @media (max-width: $width-smartphone) {
+        filter: drop-shadow(1px 0 0 $color);
+    }
+}
+
+@mixin Section__TitleImage {
+    width: 100%;
+    @media (max-width: 960px) {
+        width  : 95%;
+        margin : 0 auto;
+    }
+}
+
+@mixin Section__Subtitle ($height) {
+    height         : $height;
+    line-height    : $height;
+    text-align     : center;
+    vertical-align : top;
+    @media (max-width: $width-tablet) {
+        height        : auto;
+        font-size     : $h5;
+        line-height   : $h3;
+    }
+}
+
+@mixin Section__Cells {
+    display         : flex;
+    flex-flow       : row wrap;
+    justify-content : space-around;
+}
+
+@mixin Section__Cell {
+    flex       : 1;
+    min-width  : 240px;
+    padding    : 20px 40px;
+    box-sizing : border-box;
+}

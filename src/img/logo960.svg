@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="960px" height="320px" viewBox="0 0 960 320" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #FFFFFF;">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>Top Title</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="960" height="320"></rect>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Top-Title">
+            <g id="Title">
+                <g id="Group-2">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Mask"></g>
+                    <g mask="url(#mask-2)">
+                        <g transform="translate(0.000000, 40.000000)">
+                            <g id="logo" fill-rule="evenodd">
+                                <rect id="Rectangle-17" fill="#2E2E2C" x="85" y="56" width="30" height="190"></rect>
+                                <rect id="Rectangle-17-Copy" fill="#2E2E2C" x="185" y="56" width="30" height="190"></rect>
+                                <rect id="Rectangle-15-Copy" fill="#2E2E2C" x="45" y="126" width="210" height="30"></rect>
+                                <rect id="Rectangle-15-Copy-2" fill="#2E2E2C" x="45" y="56" width="210" height="30"></rect>
+                            </g>
+                            <text id="Kyoto.js" font-family="HiraKakuStd-W8, Hiragino Kaku Gothic Std" font-size="144" font-weight="600">
+                                <tspan x="250.04" y="174" fill="#000000">Kyoto.js</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
